@@ -60,14 +60,7 @@ void commentSheet(BuildContext context) async {
                         items: [1,2,3,4,5].map((i) {
                           return Builder(
                             builder: (BuildContext context) {
-                              return Container(
-                                  width: MediaQuery.of(context).size.width,
-                                  margin: EdgeInsets.symmetric(horizontal: 5.0),
-                                  decoration: BoxDecoration(
-                                      color: Colors.amber
-                                  ),
-                                  child: Text('Image $i', style: TextStyle(fontSize: 16.0),)
-                              );
+                              return Image.asset("assets/images/listing/$i.jpg");
                             },
                           );
                         }).toList(),
