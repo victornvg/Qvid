@@ -4,6 +4,7 @@ import 'package:qvid/Components/entry_field.dart';
 import 'package:qvid/Locale/locale.dart';
 import 'package:qvid/Theme/colors.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:flutter/material.dart';
 
 class Comment {
   final String? image;
@@ -16,7 +17,18 @@ class Comment {
 
 void commentSheet(BuildContext context) async {
   var locale = AppLocalizations.of(context)!;
-
+  final VoidCallback? onPressed = () {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return Dialog(
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
+          elevation: 16,
+          child: Text('To be implemented!')
+        );
+      },
+    );
+  };
   await showModalBottomSheet(
       enableDrag: false,
       isScrollControlled: true,
@@ -310,6 +322,42 @@ void commentSheet(BuildContext context) async {
                   beginOffset: Offset(0, 0.3),
                   endOffset: Offset(0, 0),
                   slideCurve: Curves.linearToEaseOut,
+                ),
+                PositionedDirectional(
+                  bottom: 0,
+                  start: 20,
+                  end: 20,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Column(
+                        children: [
+                          ElevatedButton(
+                            onPressed: onPressed,
+                            child: const Text('Call'),
+                            style: ElevatedButton.styleFrom(
+                              primary: Colors.grey,
+                              minimumSize: Size(160, 50),
+                              maximumSize: Size(160, 50)
+                            ),
+                          )
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          ElevatedButton(
+                            onPressed: onPressed,
+                            child: const Text('Message'),
+                            style: ElevatedButton.styleFrom(
+                              primary: Colors.grey,
+                                minimumSize: Size(160, 50),
+                                maximumSize: Size(160, 50)
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
                 ),
               ],
             ),
