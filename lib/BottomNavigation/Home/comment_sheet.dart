@@ -255,34 +255,61 @@ void commentSheet(BuildContext context) async {
                             ],
                           )
                         ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          Column(
+                            children: [
+                              Padding(
+                                padding: EdgeInsets.fromLTRB(20.0, 10, 0, 0),
+                                child: RichText(
+                                    text: TextSpan(
+                                      text: 'Listing Id',
+                                      style: TextStyle(fontSize: 15),
+                                    )
+                                ),
+                              )
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              Padding(
+                                padding: EdgeInsets.fromLTRB(0, 10, 20, 0),
+                                child: RichText(
+                                    text: TextSpan(
+                                      text: '12345',
+                                      style: TextStyle(fontSize: 15),
+                                    )
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                      Padding(
+                          padding: EdgeInsets.fromLTRB(20.0, 10, 0, 0),
+                          child: RichText(
+                            text: TextSpan(
+                              text: 'Description',
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                            ),
+                          )
+                      ),
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(20, 10, 0, 0),
+                        child: RichText(
+                            text: TextSpan(
+                              text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+                              style: TextStyle(fontSize: 15),
+                            )
+                        ),
                       )
                     ],
                   ),
                   beginOffset: Offset(0, 0.3),
                   endOffset: Offset(0, 0),
                   slideCurve: Curves.linearToEaseOut,
-                ),
-                PositionedDirectional(
-                  bottom: -10,
-                  start: 0,
-                  end: 0,
-                  child: EntryField(
-                    counter: null,
-                    padding: EdgeInsets.zero,
-                    hint: locale.writeYourComment,
-                    fillColor: darkColor,
-                    prefix: Padding(
-                      padding:
-                          EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-                      child: CircleAvatar(
-                        backgroundImage: AssetImage('assets/images/user.webp'),
-                      ),
-                    ),
-                    suffixIcon: Icon(
-                      Icons.send,
-                      color: mainColor,
-                    ),
-                  ),
                 ),
               ],
             ),
