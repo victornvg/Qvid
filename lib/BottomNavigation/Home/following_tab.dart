@@ -240,10 +240,10 @@ class _VideoPageState extends State<VideoPage> with RouteAware {
                 ),
                 CustomButton(
                     ImageIcon(
-                      AssetImage('assets/icons/ic_comment.png'),
+                      AssetImage('assets/icons/detail-icon.png'),
                       color: secondaryColor,
                     ),
-                    '287', onPressed: () {
+                    'Details', onPressed: () {
                   commentSheet(context);
                 }),
                 CustomButton(
