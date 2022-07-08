@@ -117,7 +117,7 @@ void commentSheet(BuildContext context) async {
                               Row(
                                 children: [
                                   Padding(
-                                      padding: EdgeInsets.fromLTRB(30.0, 10, 0, 10),
+                                      padding: EdgeInsets.fromLTRB(30.0, 10, 0, 0),
                                       child: RichText(
                                         text: TextSpan(
                                           text: 'Bedrooms',
@@ -147,7 +147,7 @@ void commentSheet(BuildContext context) async {
                               Row(
                                 children: [
                                   Padding(
-                                      padding: EdgeInsets.fromLTRB(30.0, 10, 0, 20),
+                                      padding: EdgeInsets.fromLTRB(30.0, 10, 0, 0),
                                       child: RichText(
                                         text: TextSpan(
                                           text: 'Bathrooms',
@@ -177,7 +177,7 @@ void commentSheet(BuildContext context) async {
                               Row(
                                 children: [
                                   Padding(
-                                      padding: EdgeInsets.fromLTRB(30.0, 10, 0, 20),
+                                      padding: EdgeInsets.fromLTRB(30.0, 10, 0, 0),
                                       child: RichText(
                                         text: TextSpan(
                                           text: 'Living space',
