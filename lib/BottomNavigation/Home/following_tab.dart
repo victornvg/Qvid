@@ -84,26 +84,7 @@ class _FollowingTabBodyState extends State<FollowingTabBody> {
           isFollowing: widget.isFollowing,
         );
       },
-      onPageChanged: widget.variable == null
-          ? (i) async {
-              if (i == 2) {
-                await showModalBottomSheet(
-                  shape: OutlineInputBorder(
-                      borderSide: BorderSide(color: transparentColor),
-                      borderRadius:
-                          BorderRadius.vertical(top: Radius.circular(16.0))),
-                  context: context,
-                  isScrollControlled: true,
-                  isDismissible: false,
-                  builder: (context) {
-                    return Container(
-                        height: MediaQuery.of(context).size.width * 1.2,
-                        child: LoginNavigator());
-                  },
-                );
-              }
-            }
-          : null,
+      onPageChanged: null,
       itemCount: widget.videos.length,
     );
   }

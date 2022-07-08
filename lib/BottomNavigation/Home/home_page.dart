@@ -6,18 +6,27 @@ import 'package:qvid/app_config/app_config.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 List<String> videos1 = [
-  'assets/videos/3.mp4',
-  'assets/videos/1.mp4',
-  'assets/videos/2.mp4',
+  'assets/videos/video1.mp4',
+  'assets/videos/video2.mp4',
+  'assets/videos/video3.mp4',
+  'assets/videos/video4.mp4',
+  'assets/videos/video5.mp4',
+  'assets/videos/video6.mp4',
 ];
 
 List<String> videos2 = [
-  'assets/videos/4.mp4',
-  'assets/videos/5.mp4',
-  'assets/videos/6.mp4',
+  'assets/videos/video1.mp4',
+  'assets/videos/video2.mp4',
+  'assets/videos/video3.mp4',
+  'assets/videos/video4.mp4',
+  'assets/videos/video5.mp4',
+  'assets/videos/video6.mp4',
 ];
 
 List<String> imagesInDisc1 = [
+  'assets/user/user1.png',
+  'assets/user/user2.png',
+  'assets/user/user3.png',
   'assets/user/user1.png',
   'assets/user/user2.png',
   'assets/user/user3.png',
@@ -26,6 +35,9 @@ List<String> imagesInDisc1 = [
 List<String> imagesInDisc2 = [
   'assets/user/user4.png',
   'assets/user/user3.png',
+  'assets/user/user1.png',
+  'assets/user/user1.png',
+  'assets/user/user1.png',
   'assets/user/user1.png',
 ];
 
