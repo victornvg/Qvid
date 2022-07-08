@@ -5,6 +5,7 @@ import 'package:qvid/Locale/locale.dart';
 import 'package:qvid/Theme/colors.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Comment {
   final String? image;
@@ -18,16 +19,7 @@ class Comment {
 void commentSheet(BuildContext context) async {
   var locale = AppLocalizations.of(context)!;
   final VoidCallback? onPressed = () {
-    showDialog(
-      context: context,
-      builder: (context) {
-        return Dialog(
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
-          elevation: 16,
-          child: Text('To be implemented!')
-        );
-      },
-    );
+    launchUrl(Uri.parse('tel:+84987654321'));
   };
   await showModalBottomSheet(
       enableDrag: false,

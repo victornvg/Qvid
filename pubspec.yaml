@@ -23,6 +23,7 @@ dependencies:
   animation_wrappers: ^0.0.4
   google_mobile_ads: ^0.13.2
   shared_preferences: ^2.0.13
+  url_launcher: 6.1.4
   # buy_this_app:
   #   git:
   #     url: git@gitlab.com:verbosetech-flutter/buy-this-app-package.git
